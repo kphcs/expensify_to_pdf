@@ -1,4 +1,5 @@
-from __future__ import print_function
+# Start with python3
+
 from os.path import join, dirname, abspath
 import xlrd
 from datetime import datetime
@@ -16,7 +17,7 @@ merchant =''
 extention =''
 
 
-fname = join(dirname(dirname(abspath(__file__))), 'declaraties-expensify/', 'Bulk_Expense_Export-3.xls')
+fname = join(dirname(dirname(abspath(__file__))), 'declaraties-expensify/', 'Bulk_Expense_Export.xls')
 
 # Open the workbook
 xl_workbook = xlrd.open_workbook(fname)
